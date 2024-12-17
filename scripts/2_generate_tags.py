@@ -46,8 +46,8 @@ res = result.choices[0].message.content
 
 print("res: ", res)
 
-# remove dash and any extra whitespace
-tags = [tag.strip('- ').strip() for tag in res.split('\n') if tag.strip()]
+# remove dash, numbers, and any extra whitespace
+tags = [tag.strip('- .0123456789').strip() for tag in res.split('\n') if tag.strip()]
 
 with open('tags.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
