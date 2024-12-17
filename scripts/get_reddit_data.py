@@ -169,7 +169,7 @@ def get_score_of_first_comment_mentioning_pepto(element):
 with open('reddit_ALL_with_ids.json', 'r') as json_file:
     data = json.load(json_file)
 
-with open('id_info_score.csv', 'w', newline='') as csv_file:
+with open('id_info.csv', 'w', newline='') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(['id', 'type', 'title', 'subreddit', 'score'])
 
