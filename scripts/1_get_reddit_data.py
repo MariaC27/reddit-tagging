@@ -20,7 +20,7 @@ USER_AGENT = os.getenv('USER_AGENT')
 # Comment structure: content, user, score, created time
 
 
-# STEP1: use API to get data and write to JSON
+# use API to get data and write to JSON
 
 reddit = praw.Reddit(client_id=CLIENT_ID, client_secret=CLIENT_SECRET,
                      user_agent=USER_AGENT)
@@ -44,13 +44,17 @@ def collect_thread_comments(root_comment, post):
     return thread_comments
 
 
-subreddits = [
-    "peptobismol", "medicine", "pharmacy", "stomachproblems", "ibs",
-    "pharmacology", "medicaladvice", "chronicillness", "crohnsdisease",
-    "healthanxiety", "askdocs", "medical", "diarrhea", "Gastritis",
-    "unpopularopinion", "AskReddit", "GERD", "IBD", "Zepbound",
-    "UlcerativeColitis", "GenX", "breastfeeding", "BabyBumps", "Ozempic",
-    "HPylori", "Diverticulitis", "emetophobia", "pregnant", "Celiac"]
+# official list for pepto search:
+# subreddits = [
+#     "peptobismol", "medicine", "pharmacy", "stomachproblems", "ibs",
+#     "pharmacology", "medicaladvice", "chronicillness", "crohnsdisease",
+#     "healthanxiety", "askdocs", "medical", "diarrhea", "Gastritis",
+#     "unpopularopinion", "AskReddit", "GERD", "IBD", "Zepbound",
+#     "UlcerativeColitis", "GenX", "breastfeeding", "BabyBumps", "Ozempic",
+#     "HPylori", "Diverticulitis", "emetophobia", "pregnant", "Celiac"]
+
+# for testing:
+subreddits = ["stomachproblems", "ibs", "pharmacology", "medicaladvice"]
 
 search_term = "pepto"
 
@@ -144,13 +148,13 @@ with open('reddit_data.json', 'r') as file:
 for index, item in enumerate(data):
     item['id'] = index
 
-with open('reddit_ALL_with_ids.json', 'w') as file:
+with open('reddit_data_ids.json', 'w') as file:
     json.dump(data, file, indent=4)
 
 print("IDs added successfully.")
 
 
-# STEP2: write to a CSV file so can be joined with the other data later
+# write to a CSV file so can be joined with the other data later
 
 def get_score_of_first_comment_mentioning_pepto(element):
     # check root comment first
@@ -166,7 +170,7 @@ def get_score_of_first_comment_mentioning_pepto(element):
 
 
 # load json data
-with open('reddit_ALL_with_ids.json', 'r') as json_file:
+with open('reddit_data_ids.json', 'r') as json_file:
     data = json.load(json_file)
 
 with open('id_info.csv', 'w', newline='') as csv_file:

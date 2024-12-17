@@ -14,7 +14,7 @@ OPEN_AI_KEY = os.getenv('OPEN_AI_KEY')
 
 client = OpenAI(api_key=OPEN_AI_KEY)
 
-with open('reddit_ALL_with_ids.json', 'r') as file:
+with open('reddit_data_ids.json', 'r') as file:
     data = json.load(file)
 
 
@@ -38,18 +38,24 @@ def make_api_request(text_input, tag):
     return response
 
 
-skipped_ids = []
-applied_ids = []
-
-# write header row to tags.csv
-with open('tags.csv', 'w', newline='') as csvfile:
+# write header row to tagged_data.csv
+with open('tagged_data.csv', 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(['id', 'tag'])
 
+# get tags from csv file
+tags = []
+with open('tags.csv', 'r') as tagfile:
+    tagreader = csv.reader(tagfile)
+    next(tagreader, None)  # skip the header row
+    for row in tagreader:
+        tags.append(row[0])
 
-tags = ["nausea relief", "rapid relief", "digestive soothing", "diarrhea relief", "bloating reduction", "travel essential", "convenient", "black stool", "tongue discoloration",
-        "constipation", "taste/texture issues", "ineffective for severe cases", "medication interactions", "worsened symptoms", "expensive"]
+
 for tag in tags:
+    skipped_ids = []
+    applied_ids = []
+    print("starting tag: ", tag)
     for i in range(len(data)):
         curr_object = data[i]
         # convert obj to plain text
@@ -65,10 +71,11 @@ for tag in tags:
         else:
             skipped_ids.append(i)
 
-        print("skipped ids: ", skipped_ids)
+    print("skipped ids: ", skipped_ids)
+    print("num tagged true: ", len(applied_ids))
 
-        # generates or appends to CSV file with ID and tag in 1:1 relationship, can be joined with another table to make visualizations
-        with open('tags.csv', 'a', newline='') as csvfile:
-            csvwriter = csv.writer(csvfile)
-            for applied_id in applied_ids:
-                csvwriter.writerow([applied_id, tag])
+    # generates or appends to CSV file with ID and tag in 1:1 relationship, can be joined with another table to make visualizations
+    with open('tagged_data.csv', 'a', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        for applied_id in applied_ids:
+            csvwriter.writerow([applied_id, tag])

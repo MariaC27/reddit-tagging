@@ -1,0 +1,523 @@
+id,tag
+0,Helps with diarrhea
+1,Helps with diarrhea
+5,Helps with diarrhea
+11,Helps with diarrhea
+14,Helps with diarrhea
+16,Helps with diarrhea
+26,Helps with diarrhea
+27,Helps with diarrhea
+28,Helps with diarrhea
+29,Helps with diarrhea
+34,Helps with diarrhea
+37,Helps with diarrhea
+39,Helps with diarrhea
+40,Helps with diarrhea
+42,Helps with diarrhea
+51,Helps with diarrhea
+52,Helps with diarrhea
+54,Helps with diarrhea
+56,Helps with diarrhea
+57,Helps with diarrhea
+58,Helps with diarrhea
+59,Helps with diarrhea
+62,Helps with diarrhea
+64,Helps with diarrhea
+66,Helps with diarrhea
+67,Helps with diarrhea
+68,Helps with diarrhea
+69,Helps with diarrhea
+70,Helps with diarrhea
+72,Helps with diarrhea
+74,Helps with diarrhea
+75,Helps with diarrhea
+83,Helps with diarrhea
+87,Helps with diarrhea
+88,Helps with diarrhea
+89,Helps with diarrhea
+91,Helps with diarrhea
+92,Helps with diarrhea
+93,Helps with diarrhea
+94,Helps with diarrhea
+95,Helps with diarrhea
+96,Helps with diarrhea
+101,Helps with diarrhea
+103,Helps with diarrhea
+104,Helps with diarrhea
+107,Helps with diarrhea
+108,Helps with diarrhea
+110,Helps with diarrhea
+111,Helps with diarrhea
+3,Reduces stomach pain
+13,Reduces stomach pain
+27,Reduces stomach pain
+29,Reduces stomach pain
+33,Reduces stomach pain
+52,Reduces stomach pain
+56,Reduces stomach pain
+59,Reduces stomach pain
+64,Reduces stomach pain
+74,Reduces stomach pain
+87,Reduces stomach pain
+92,Reduces stomach pain
+94,Reduces stomach pain
+101,Reduces stomach pain
+104,Reduces stomach pain
+107,Reduces stomach pain
+108,Reduces stomach pain
+11,Effective for nausea
+22,Effective for nausea
+23,Effective for nausea
+29,Effective for nausea
+57,Effective for nausea
+65,Effective for nausea
+79,Effective for nausea
+84,Effective for nausea
+107,Effective for nausea
+0,Works temporarily
+1,Works temporarily
+2,Works temporarily
+3,Works temporarily
+5,Works temporarily
+6,Works temporarily
+7,Works temporarily
+9,Works temporarily
+10,Works temporarily
+11,Works temporarily
+13,Works temporarily
+14,Works temporarily
+16,Works temporarily
+18,Works temporarily
+20,Works temporarily
+21,Works temporarily
+22,Works temporarily
+23,Works temporarily
+26,Works temporarily
+27,Works temporarily
+31,Works temporarily
+33,Works temporarily
+37,Works temporarily
+39,Works temporarily
+40,Works temporarily
+42,Works temporarily
+43,Works temporarily
+44,Works temporarily
+47,Works temporarily
+48,Works temporarily
+50,Works temporarily
+51,Works temporarily
+52,Works temporarily
+53,Works temporarily
+54,Works temporarily
+56,Works temporarily
+57,Works temporarily
+59,Works temporarily
+60,Works temporarily
+62,Works temporarily
+65,Works temporarily
+66,Works temporarily
+67,Works temporarily
+68,Works temporarily
+69,Works temporarily
+70,Works temporarily
+72,Works temporarily
+73,Works temporarily
+74,Works temporarily
+75,Works temporarily
+77,Works temporarily
+78,Works temporarily
+79,Works temporarily
+81,Works temporarily
+83,Works temporarily
+84,Works temporarily
+85,Works temporarily
+87,Works temporarily
+88,Works temporarily
+91,Works temporarily
+92,Works temporarily
+93,Works temporarily
+94,Works temporarily
+95,Works temporarily
+96,Works temporarily
+97,Works temporarily
+99,Works temporarily
+100,Works temporarily
+101,Works temporarily
+103,Works temporarily
+104,Works temporarily
+105,Works temporarily
+107,Works temporarily
+108,Works temporarily
+110,Works temporarily
+111,Works temporarily
+112,Works temporarily
+0,Constipating effects
+4,Constipating effects
+22,Constipating effects
+24,Constipating effects
+26,Constipating effects
+39,Constipating effects
+46,Constipating effects
+60,Constipating effects
+63,Constipating effects
+65,Constipating effects
+66,Constipating effects
+72,Constipating effects
+76,Constipating effects
+79,Constipating effects
+80,Constipating effects
+83,Constipating effects
+103,Constipating effects
+105,Constipating effects
+110,Constipating effects
+83,Gentle on stomach
+87,Gentle on stomach
+88,Gentle on stomach
+92,Gentle on stomach
+94,Gentle on stomach
+1,Frequent use concerns
+5,Frequent use concerns
+6,Frequent use concerns
+7,Frequent use concerns
+10,Frequent use concerns
+13,Frequent use concerns
+14,Frequent use concerns
+17,Frequent use concerns
+18,Frequent use concerns
+19,Frequent use concerns
+20,Frequent use concerns
+21,Frequent use concerns
+22,Frequent use concerns
+23,Frequent use concerns
+24,Frequent use concerns
+25,Frequent use concerns
+26,Frequent use concerns
+27,Frequent use concerns
+31,Frequent use concerns
+33,Frequent use concerns
+37,Frequent use concerns
+39,Frequent use concerns
+40,Frequent use concerns
+41,Frequent use concerns
+42,Frequent use concerns
+43,Frequent use concerns
+44,Frequent use concerns
+45,Frequent use concerns
+46,Frequent use concerns
+47,Frequent use concerns
+48,Frequent use concerns
+49,Frequent use concerns
+50,Frequent use concerns
+51,Frequent use concerns
+52,Frequent use concerns
+53,Frequent use concerns
+54,Frequent use concerns
+57,Frequent use concerns
+58,Frequent use concerns
+60,Frequent use concerns
+62,Frequent use concerns
+63,Frequent use concerns
+65,Frequent use concerns
+66,Frequent use concerns
+67,Frequent use concerns
+68,Frequent use concerns
+70,Frequent use concerns
+71,Frequent use concerns
+72,Frequent use concerns
+73,Frequent use concerns
+74,Frequent use concerns
+75,Frequent use concerns
+76,Frequent use concerns
+77,Frequent use concerns
+79,Frequent use concerns
+80,Frequent use concerns
+83,Frequent use concerns
+87,Frequent use concerns
+88,Frequent use concerns
+97,Frequent use concerns
+101,Frequent use concerns
+103,Frequent use concerns
+104,Frequent use concerns
+105,Frequent use concerns
+107,Frequent use concerns
+108,Frequent use concerns
+110,Frequent use concerns
+0,Mixed results
+1,Mixed results
+2,Mixed results
+3,Mixed results
+4,Mixed results
+5,Mixed results
+6,Mixed results
+7,Mixed results
+10,Mixed results
+13,Mixed results
+15,Mixed results
+17,Mixed results
+18,Mixed results
+20,Mixed results
+22,Mixed results
+23,Mixed results
+24,Mixed results
+27,Mixed results
+28,Mixed results
+29,Mixed results
+30,Mixed results
+31,Mixed results
+33,Mixed results
+36,Mixed results
+37,Mixed results
+38,Mixed results
+39,Mixed results
+40,Mixed results
+41,Mixed results
+43,Mixed results
+44,Mixed results
+45,Mixed results
+46,Mixed results
+47,Mixed results
+48,Mixed results
+49,Mixed results
+50,Mixed results
+51,Mixed results
+52,Mixed results
+53,Mixed results
+55,Mixed results
+60,Mixed results
+62,Mixed results
+63,Mixed results
+65,Mixed results
+66,Mixed results
+67,Mixed results
+68,Mixed results
+72,Mixed results
+74,Mixed results
+75,Mixed results
+77,Mixed results
+78,Mixed results
+79,Mixed results
+83,Mixed results
+84,Mixed results
+85,Mixed results
+87,Mixed results
+88,Mixed results
+90,Mixed results
+91,Mixed results
+92,Mixed results
+94,Mixed results
+97,Mixed results
+103,Mixed results
+104,Mixed results
+105,Mixed results
+106,Mixed results
+109,Mixed results
+110,Mixed results
+111,Mixed results
+10,Lifesaver during flare-ups
+11,Lifesaver during flare-ups
+13,Lifesaver during flare-ups
+14,Lifesaver during flare-ups
+26,Lifesaver during flare-ups
+29,Lifesaver during flare-ups
+37,Lifesaver during flare-ups
+39,Lifesaver during flare-ups
+40,Lifesaver during flare-ups
+42,Lifesaver during flare-ups
+52,Lifesaver during flare-ups
+56,Lifesaver during flare-ups
+59,Lifesaver during flare-ups
+62,Lifesaver during flare-ups
+66,Lifesaver during flare-ups
+69,Lifesaver during flare-ups
+74,Lifesaver during flare-ups
+87,Lifesaver during flare-ups
+88,Lifesaver during flare-ups
+92,Lifesaver during flare-ups
+93,Lifesaver during flare-ups
+94,Lifesaver during flare-ups
+95,Lifesaver during flare-ups
+103,Lifesaver during flare-ups
+104,Lifesaver during flare-ups
+107,Lifesaver during flare-ups
+108,Lifesaver during flare-ups
+3,Indigestion relief
+10,Indigestion relief
+11,Indigestion relief
+13,Indigestion relief
+22,Indigestion relief
+23,Indigestion relief
+27,Indigestion relief
+28,Indigestion relief
+29,Indigestion relief
+34,Indigestion relief
+36,Indigestion relief
+42,Indigestion relief
+53,Indigestion relief
+56,Indigestion relief
+57,Indigestion relief
+60,Indigestion relief
+61,Indigestion relief
+62,Indigestion relief
+64,Indigestion relief
+69,Indigestion relief
+84,Indigestion relief
+90,Indigestion relief
+97,Indigestion relief
+98,Indigestion relief
+102,Indigestion relief
+103,Indigestion relief
+104,Indigestion relief
+107,Indigestion relief
+108,Indigestion relief
+112,Indigestion relief
+0,Side effects
+2,Side effects
+4,Side effects
+5,Side effects
+6,Side effects
+7,Side effects
+8,Side effects
+9,Side effects
+10,Side effects
+13,Side effects
+17,Side effects
+18,Side effects
+19,Side effects
+20,Side effects
+21,Side effects
+22,Side effects
+24,Side effects
+27,Side effects
+29,Side effects
+30,Side effects
+36,Side effects
+38,Side effects
+39,Side effects
+40,Side effects
+41,Side effects
+43,Side effects
+45,Side effects
+46,Side effects
+48,Side effects
+49,Side effects
+50,Side effects
+51,Side effects
+52,Side effects
+53,Side effects
+54,Side effects
+60,Side effects
+62,Side effects
+63,Side effects
+65,Side effects
+66,Side effects
+70,Side effects
+71,Side effects
+72,Side effects
+77,Side effects
+78,Side effects
+79,Side effects
+80,Side effects
+83,Side effects
+87,Side effects
+88,Side effects
+92,Side effects
+94,Side effects
+97,Side effects
+99,Side effects
+100,Side effects
+103,Side effects
+105,Side effects
+106,Side effects
+0,Can cause constipation
+4,Can cause constipation
+5,Can cause constipation
+7,Can cause constipation
+10,Can cause constipation
+11,Can cause constipation
+22,Can cause constipation
+24,Can cause constipation
+26,Can cause constipation
+27,Can cause constipation
+31,Can cause constipation
+32,Can cause constipation
+37,Can cause constipation
+39,Can cause constipation
+46,Can cause constipation
+49,Can cause constipation
+52,Can cause constipation
+54,Can cause constipation
+56,Can cause constipation
+57,Can cause constipation
+58,Can cause constipation
+60,Can cause constipation
+63,Can cause constipation
+65,Can cause constipation
+66,Can cause constipation
+71,Can cause constipation
+72,Can cause constipation
+73,Can cause constipation
+75,Can cause constipation
+76,Can cause constipation
+77,Can cause constipation
+79,Can cause constipation
+80,Can cause constipation
+81,Can cause constipation
+82,Can cause constipation
+83,Can cause constipation
+84,Can cause constipation
+86,Can cause constipation
+91,Can cause constipation
+92,Can cause constipation
+93,Can cause constipation
+95,Can cause constipation
+96,Can cause constipation
+101,Can cause constipation
+103,Can cause constipation
+105,Can cause constipation
+106,Can cause constipation
+107,Can cause constipation
+110,Can cause constipation
+1,Color changes in stool
+7,Color changes in stool
+8,Color changes in stool
+9,Color changes in stool
+10,Color changes in stool
+13,Color changes in stool
+17,Color changes in stool
+35,Color changes in stool
+52,Color changes in stool
+93,Color changes in stool
+99,Color changes in stool
+100,Color changes in stool
+10,Discomfort during travel
+14,Discomfort during travel
+26,Discomfort during travel
+53,Discomfort during travel
+67,Discomfort during travel
+68,Discomfort during travel
+103,Discomfort during travel
+104,Discomfort during travel
+105,Discomfort during travel
+106,Discomfort during travel
+107,Discomfort during travel
+108,Discomfort during travel
+0,Recommended for emergency situations
+13,Recommended for emergency situations
+26,Recommended for emergency situations
+40,Recommended for emergency situations
+42,Recommended for emergency situations
+44,Recommended for emergency situations
+48,Recommended for emergency situations
+50,Recommended for emergency situations
+51,Recommended for emergency situations
+52,Recommended for emergency situations
+53,Recommended for emergency situations
+56,Recommended for emergency situations
+62,Recommended for emergency situations
+73,Recommended for emergency situations
+95,Recommended for emergency situations
+96,Recommended for emergency situations
+102,Recommended for emergency situations
+103,Recommended for emergency situations
+107,Recommended for emergency situations
+108,Recommended for emergency situations
