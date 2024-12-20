@@ -44,19 +44,15 @@ def collect_thread_comments(root_comment, post):
     return thread_comments
 
 
-# official list for pepto search:
-# subreddits = [
-#     "peptobismol", "medicine", "pharmacy", "stomachproblems", "ibs",
-#     "pharmacology", "medicaladvice", "chronicillness", "crohnsdisease",
-#     "healthanxiety", "askdocs", "medical", "diarrhea", "Gastritis",
-#     "unpopularopinion", "AskReddit", "GERD", "IBD", "Zepbound",
-#     "UlcerativeColitis", "GenX", "breastfeeding", "BabyBumps", "Ozempic",
-#     "HPylori", "Diverticulitis", "emetophobia", "pregnant", "Celiac"]
+# common
+common_subreddits = ["GERD", "pregnant", "BabyBumps", "acidreflux", "Gastritis", "ibs", "medicine", "stomachproblems", "pharmacy", "medicaladvice"]
 
-# for testing:
-subreddits = ["stomachproblems", "ibs", "pharmacology", "medicaladvice"]
 
-search_term = "pepto"
+specific_subreddits = ["hysterectomy", "UlcerativeColitis", "SIBO", "Gastroparesis", "noburp"]
+
+subreddits = common_subreddits + specific_subreddits
+
+search_term = "gasx"
 
 now = datetime.now()
 
@@ -130,7 +126,7 @@ for subreddit_name in subreddits:
                         'comments': thread_comments
                     })
                     num_threads += 1
-            print("found ", num_threads, " threads in post: ", post.title)
+            # print("found ", num_threads, " threads in post: ", post.title)
 
     print("found ", num, " posts in subreddit: ", subreddit_name)
     num = 0
@@ -148,8 +144,10 @@ with open('reddit_data.json', 'r') as file:
 for index, item in enumerate(data):
     item['id'] = index
 
-with open('reddit_data_ids.json', 'w') as file:
+with open(f'{search_term}_reddit_data.json', 'w') as file:
     json.dump(data, file, indent=4)
+
+os.remove('reddit_data.json')
 
 print("IDs added successfully.")
 
@@ -170,10 +168,10 @@ def get_score_of_first_comment_mentioning_pepto(element):
 
 
 # load json data
-with open('reddit_data_ids.json', 'r') as json_file:
+with open(f'{search_term}_reddit_data.json', 'r') as json_file:
     data = json.load(json_file)
 
-with open('id_info.csv', 'w', newline='') as csv_file:
+with open(f'{search_term}_id_info.csv', 'w', newline='') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(['id', 'type', 'title', 'subreddit', 'score'])
 
