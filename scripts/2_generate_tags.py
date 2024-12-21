@@ -24,9 +24,9 @@ def make_api_request(text_input):
                 "content": (
                     f"""
                     See the following data in JSON format: {text_input}. This data has a list of objects of "post" and "comment" type from various subreddits that contain
-                    references to "pepto" or "pepto bismol" or similar. Take 50 random samples of 30 items each and use these to generate "tags" of commonly used words or
-                    phrases related to the sentiment and context surrounding pepto bismol discussions in these posts and comments. Return a list of 12 of these tags. Tags should
-                    indicate sentiment in which pepto was discussed. Make sure to include both positive and negative sentiment and context. I want the actual output, not
+                    references to "wonderbelly" or similar. Take 50 random samples of 30 items each and use these to generate "tags" of commonly used words or
+                    phrases related to the sentiment and context surrounding the product in these posts and comments. Return a list of 12 of these tags. Tags should
+                    indicate sentiment in which the product was discussed. Make sure to include both positive and negative sentiment and context. I want the actual output, not
                     a python script. Return ONLY the list of tags, nothing else because I want to write them to a csv file.
                     """
                 )
@@ -36,7 +36,7 @@ def make_api_request(text_input):
     return response
 
 
-with open('reddit_data_ids.json', 'r') as file:
+with open('private_data/wonderbelly_reddit_data.json', 'r') as file:
     data = json.load(file)
 
 text = json.dumps(data, indent=2)
@@ -49,7 +49,7 @@ print("res: ", res)
 # remove dash, numbers, and any extra whitespace
 tags = [tag.strip('- .0123456789').strip() for tag in res.split('\n') if tag.strip()]
 
-with open('tags.csv', 'w', newline='') as csvfile:
+with open('wonderbellly_tags.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['tag'])
     for tag in tags:
