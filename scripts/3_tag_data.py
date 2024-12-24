@@ -12,9 +12,12 @@ OPEN_AI_KEY = os.getenv('OPEN_AI_KEY')
 # for each tag and each object in the JSON, call the API to determine if the tag applies
 # generate a CSV file with the ID and the tag for each tag that applies to the object
 
+
+# TODO modify all json/csv file names AND prompt for each run
+
 client = OpenAI(api_key=OPEN_AI_KEY)
 
-with open('reddit_data_ids.json', 'r') as file:
+with open('private_data/cabinet_reddit_data.json', 'r') as file:
     data = json.load(file)
 
 
@@ -28,7 +31,7 @@ def make_api_request(text_input, tag):
                 "content": (
                     f"""
                     For the following reddit post or comment object in JSON format: {text_input}, return true or false about whether the following tag applies to this post with
-                    regards to Pepto Bismol: "{tag}". Look at the title, content, and content of any nested comments in the object to determine if the tag applies
+                    regards to Cabinet Health: "{tag}". Look at the title, content, and content of any nested comments in the object to determine if the tag applies
                     (true or false). Return ONLY the word "True" or the word "False", nothing else.
                     """
                 )
@@ -39,13 +42,13 @@ def make_api_request(text_input, tag):
 
 
 # write header row to tagged_data.csv
-with open('tagged_data.csv', 'w', newline='') as csvfile:
+with open('cabinet_tagged_data.csv', 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(['id', 'tag'])
 
 # get tags from csv file
 tags = []
-with open('tags.csv', 'r') as tagfile:
+with open('private_data/tags/cabinet_tags.csv', 'r') as tagfile:
     tagreader = csv.reader(tagfile)
     next(tagreader, None)  # skip the header row
     for row in tagreader:
@@ -75,7 +78,7 @@ for tag in tags:
     print("num tagged true: ", len(applied_ids))
 
     # generates or appends to CSV file with ID and tag in 1:1 relationship, can be joined with another table to make visualizations
-    with open('tagged_data.csv', 'a', newline='') as csvfile:
+    with open('cabinet_tagged_data.csv', 'a', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for applied_id in applied_ids:
             csvwriter.writerow([applied_id, tag])
